@@ -18,4 +18,4 @@ def get_quote(url, params=''):
 quote = (get_quote(URL))
 
 if __name__ == '__main__':
-    print(get_quote(URL))
+    print(quote)

@@ -7,7 +7,7 @@ def sqlite_create_db():
     con = sqlite3.connect('example.db')
     # создаем объект курсора
     cur = con.cursor()
-    #создаем таблицу если не существует  добавить id и дату
+    #создаем таблицу если не существует  (добавить id и дату)
     cur.execute('CREATE TABLE IF NOT EXISTS city (country TEXT, '
                 'city TEXT,'
                 't FLOAT,'
@@ -26,6 +26,8 @@ def sqlite_create_db():
 
     cur.close() # Удаляем курсор
     con.close() # Разрываем соединение
+
+print(__name__)
 
 if __name__ =='__main__':
     sqlite_create_db()
